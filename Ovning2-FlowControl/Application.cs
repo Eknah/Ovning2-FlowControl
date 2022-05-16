@@ -47,25 +47,25 @@ namespace Ovning2_FlowControl
 
 		private void ShowMainMenu()
 		{
-			Console.WriteLine(@$" 
-			Huvudmeny
-			=========
-			{MenuHelper.Close}. Stäng program
-			{MenuHelper.YouthOrPensioner}. Ungdom eller persionär
-			{MenuHelper.RepeatTen}. Upprepa tio gånger
-			{MenuHelper.ThirdWord}. Det tredje ordet
-			".Replace("\t", ""));
+			Console.WriteLine();
+			Console.WriteLine("Huvudmeny");
+			Console.WriteLine("=========");
+			Console.WriteLine($"{MenuHelper.Close}. Stäng program");
+			Console.WriteLine($"{MenuHelper.YouthOrPensioner}. Ungdom eller persionär");
+			Console.WriteLine($"{MenuHelper.RepeatTen}. Upprepa tio gånger");
+			Console.WriteLine($"{MenuHelper.ThirdWord}. Det tredje ordet");
+			Console.WriteLine();
 		}
 
 		private void ShowSubMenu1()
 		{
-			Console.WriteLine(@$" 
-			Menyval 1
-			=========
-			{MenuHelper.MainMenu}. Huvudmeny
-			{MenuHelper.TicketPriceForAge}. Biljettpris för ålder
-			{MenuHelper.CalcForGroup}. Beräkna för sällskap
-			".Replace("\t", ""));
+			Console.WriteLine();
+			Console.WriteLine("Menyval 1");
+			Console.WriteLine("=========");
+			Console.WriteLine($"{MenuHelper.MainMenu}. Huvudmeny");
+			Console.WriteLine($"{MenuHelper.TicketPriceForAge}. Biljettpris för ålder");
+			Console.WriteLine($"{MenuHelper.CalcForGroup}. Beräkna för sällskap");
+			Console.WriteLine();
 		}
 
 		private void InterpretMenuChoice(string menuChoice)
